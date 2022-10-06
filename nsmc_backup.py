@@ -8,7 +8,7 @@ from datetime import date
 # step 2: use curl (client URL) to download the script from my github. command = curl -LJO raw.githubusercontent.com/JDFSHU/lab_code/master/nsmc_backup.py
 # step 4: check file has downloaded by using command ls, notice that it is in white, needs to be in green to be recognised as a script that is executable
 # step 5: give execute permissions to the file with command sudo chmod +x nsmc_backup.py
-# step 6: ensure the HOST and tn.write(b"cisco\n") lines 16 and 32 match your switch/lab
+# step 6: ensure the HOST and tn.write(b"cisco\n") lines 15 and 31 match your switch/lab
 # step 7: run script by using command = python3 nsmc_backup.py
 
 today = date.today()

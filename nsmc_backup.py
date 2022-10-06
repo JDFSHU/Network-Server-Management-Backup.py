@@ -5,13 +5,14 @@ from datetime import date
 
 # guide to use python3 scripts in linux
 # step 1: navigate to a memorable folder where you will store the script (good examples would be home directory or /usr/local/bin)
-# step 2: use curl (client URL) to download the script from my github. command = curl -LJO
-# step 3: give execute permissions to the file with command sudo chmod +x nsmc_backup.py
-# step 5: ensure the HOST and tn.write(b"cisco\n") lines 16 and 32 match your switch/lab
-# step 6: run script by using command = python3 nsmc_backup.py
+# step 2: use curl (client URL) to download the script from my github. command = curl -LJO raw.githubusercontent.com/JDFSHU/lab_code/master/nsmc_backup.py
+# step 4: check file has downloaded by using command ls, notice that it is in white, needs to be in green to be recognised as a script that is executable
+# step 5: give execute permissions to the file with command sudo chmod +x nsmc_backup.py
+# step 6: ensure the HOST and tn.write(b"cisco\n") lines 16 and 32 match your switch/lab
+# step 7: run script by using command = python3 nsmc_backup.py
 
 today = date.today()
-HOST = "192.168.122.122"  # Device IP address goes here
+HOST = "10.1.1.254"  # Device IP address goes here
 
 # will prompt upon script being ran, enter local username and passwords to access device via telnet
 user = input("Enter Username: ")
